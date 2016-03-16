@@ -51,13 +51,14 @@ gulp.task("clean", function(){
   return del(['build', 'tmp']);
 });
 
-//Creates either a dev or production build.  This is determined by the absence or presence of the --production flag. If it is a production build, it starts uglify, else is starts browserify.
-gulp.task("build", ['clean'], function(){
+//Creates either a dev or production build.  This is determined by the absence or presence of the --production flag. If it is a production build, it starts uglify, else is starts browserify.  After that, it runs the bower task.
+gulp.task('build', ['clean'], function(){
   if (buildProduction) {
     gulp.start('minifyScripts');
   } else {
     gulp.start('jsBrowserify');
   }
+  gulp.start('bower');
 });
 
 //Allows you to debug your JS code by running "gulp jshint" in the terminal
