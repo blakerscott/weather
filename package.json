@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/blakerscott/jsTemplate.git"
+    "url": "git+https://github.com/blakerscott/weather.git"
   },
   "devDependencies": {
     "browser-sync": "^2.11.1",
@@ -28,7 +28,7 @@
   "author": "Blake Scott",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/blakerscott/jsTemplate/issues"
+    "url": "https://github.com/blakerscott/weather/issues"
   },
-  "homepage": "https://github.com/blakerscott/jsTemplate#readme"
+  "homepage": "https://github.com/blakerscott/weather#readme"
 }
