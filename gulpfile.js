@@ -6,6 +6,7 @@ var uglify = require('gulp-uglify');
 var utilities = require('gulp-util');
 var del = require('del');
 var jshint = require('gulp-jshint');
+var browserSync = require('browser-sync').create();
 
 //Here is the bit of code we will use to tell which kind of environment we are using
 var buildProduction = utilities.env.production;
@@ -64,7 +65,14 @@ gulp.task('serve', function() {
     }
   });
 
+//the list of files we are watching
   gulp.watch(['js/*.js'], ['jsBuild']);
   gulp.watch(['bower.json'], ['bowerBuild']);
   gulp.watch(['*.html'], ['htmlBuild']);
+});
+
+
+// will reload the browser any time our HTML files change
+gulp.task('htmlBuild', function() {
+  browserSync.reload();
 });
