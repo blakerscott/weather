@@ -1,0 +1,21 @@
+{
+  "name": "weather",
+  "description": "A simple weather app.",
+  "main": "gulpfile.js",
+  "authors": [
+    "Blake Scott"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/blakerscott/weather",
+  "moduleType": [],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    
+  }
+}
