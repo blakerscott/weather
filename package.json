@@ -23,11 +23,11 @@
   },
   "dependencies": {
     "prompt": "^1.0.0"
-  }
+  },
   "author": "Blake Scott",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/blakerscott/jsTemplate/issues"
   },
-  "homepage": "https://github.com/blakerscott/jsTemplate#readme",
+  "homepage": "https://github.com/blakerscott/jsTemplate#readme"
 }
